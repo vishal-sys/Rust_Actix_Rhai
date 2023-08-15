@@ -63,7 +63,7 @@ async fn div(path: Path<(i64,i64)>) -> impl Responder {
     //run the script 
     let result = engine.eval_file::<i64>("src/div.rhai".into()).unwrap();
 
-    //return the result 
+    //return the Result 
     format!("{result}")
 }
 
